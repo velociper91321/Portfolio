@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./!ProjectTemplate.css" />
+        <title>Project Page Template</title>
+
+        <!--Font embeds-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Poppins:wght@100;200;300;400;800;900&
+        family=Source+Code+Pro:wght@637&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body class="Dark-MainColor">
+
+        <div class="NavWrapper">
+
+            <nav id="MainNavBar">
+                
+                <div class="NavBarLogo">
+                    <p class="NavBarLogoTopText">KRISH</p>
+                    <p class="NavBarLogoBottomText">HAN</p>
+                </div>
+                
+                <ul class="NavBarList">
+
+                    <li><a class="NavBarListItem" href="../../MainPage.html">Home</a></li>
+                    <li class="Breakline">|</li>
+                    <li><a class="NavBarListItem" href="../ProjectsPage.html">Projects</a></li>
+                    <li class="Breakline">|</li>
+                    <li><a class="NavBarListItem" href="../../ContactAboutPage/ContactAboutPage.html">Contact & About</a></li>
+                </ul>
+
+                <div class="RightBar">
+                    <div class="RightBarButton ThemeSwitch">
+                        ---------
+                    </div>
+
+                    <div class="SidebarButton" onclick=ShowSideBar()>
+                        <a href="#"><svg class="SideBarSwitch" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                    </div>
+                    <script>
+                        function ShowSideBar()
+                        {
+                            const sidebar = document.querySelector('.SideBar')
+                            sidebar.style.display = 'flex'
+                        }
+                    </script>
+                </div>
+
+                <div class="SideBar">
+                    <div class="NavBarLogo" style="right: 1rem; display: inline-block; text-align: start;">
+                        <p class="NavBarLogoTopText">KRISH</p>
+                        <p class="NavBarLogoBottomText">HAN</p>
+                    </div>
+                    <div>
+                        <svg class="SideBarCloseButton" onclick=HideSideBar() xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    <script>
+                        function HideSideBar()
+                        {
+                            const sidebar = document.querySelector('.SideBar')
+                            sidebar.style.display = 'none'
+                        }
+                    </script>
+                    </div>         
+                    
+                    <ul class="SidebarList">
+                        <li class="SidebarListItem"><a class="SidebarListItem" href="../../MainPage.html">Home</a></li>
+                        <li class="SidebarListItem"><a class="SidebarListItem" href="../../ProjectPage/ProjectsPage.html">Projects</a></li>
+                        <li class="SidebarListItem"><a class="SidebarListItem" href="../../ContactAboutPage/ContactAboutPage.html">Contacts & About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <a href="../../ProjectPage/ProjectsPage.html"><div class="BackButton BackButtonText">Back</div></a>
+
+        <div class="HeaderBox">
+            <h1>-</h1>
+            <h2>Unreal Projects</h2>
+        </div>
+
+        <div class="ContentBox">
+
+            <h3 class="ProjectTitle">
+                Lorem ipsum
+                <span class="ProjectSubTitle">consectetur adipiscing elit</span>
+            </h3>
+
+            <div class="ImageContainer">
+                <img class ="Image" src="https://www.bbc.co.uk/staticarchive/71b6b5e03f40e4f5466d251fb681630bd5e4e927.jpg">
+            </div>
+
+            <div class="DetailContainer">
+                <p class="DetailTitle">Consectetur Adipiscing Elit</p>
+
+                <p class="DetailContent">
+                    <strong style="color: #D62828">Lorem ipsum</strong>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                <p>
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>

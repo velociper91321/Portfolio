@@ -1,0 +1,407 @@
+
+body
+{
+    margin: 0%;
+}
+
+.Dark-MainColor
+{
+    background-color: #1A1A1A;
+}
+
+.NavWrapper
+{
+
+}
+
+#MainNavBar
+{
+    position: relative;
+    display: flex;
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    justify-content: space-between;
+    
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    align-items: center;
+}
+
+.NavBarLogo
+{
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D62828;
+    
+    height: 3.2rem;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.NavBarLogoTopText
+{
+    font-size: 2.1rem;
+    position: relative;
+    top: -33px;
+}
+.NavBarLogoBottomText
+{
+    font-size: 3rem;
+    position: relative;
+    top: -75px;
+}
+
+.RightBar
+{
+    position: relative;
+    color: #E5E5E5;
+    padding: 3px;
+
+    align-items: center;
+    gap: .625rem;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.RightBarButton
+{
+    padding: 3px;
+    border-radius: 14px;
+    align-items: center;
+    gap: .625rem;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.ThemeSwitch
+{
+    background-color: #E5E5E5;
+}
+
+.SideBarSwitch
+{
+    display:none;
+}
+
+.SideBar
+{
+    font-family: "Source Code Pro", monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 500vw;
+    width: 250px;
+    z-index: 10;
+    background-color: #000000;
+    padding: 1rem;
+
+    display: none;
+    flex-direction: column;
+}
+
+.SideBarCloseButton
+{
+    position: relative;
+    top: -2.5rem;
+    left: 14rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #E5E5E5;
+}
+
+.SideBarCloseButton:hover
+{
+    
+    fill: #D62828;
+}
+
+.SidebarList
+{
+    
+}
+
+.SidebarListItem
+{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight:600;
+    list-style: none;
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+.SidebarListItem:hover
+{
+    text-decoration: none;
+    color:#D62828
+}
+
+.NavBarList
+{
+    font-weight: 700;
+    text-wrap-style: pretty;
+    font-family: "Source Code Pro", monospace;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 2.3rem;
+    left: 3.5rem;
+}
+
+.NavBarListItem
+{
+    text-decoration: none;
+    color: #E5E5E5;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.Breakline
+{
+
+}
+
+.NavBarListItem:hover
+{
+    color:#D62828
+}
+
+.AnimatedTextBox
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 70vh;   
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.AnimatedText
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 900;
+    max-width: 24rem;
+
+    color:#D62828
+}
+
+
+.TopAnimatedText
+{
+    
+}
+.TopAnimatedText::before
+{
+    content: "Krish";
+    Animation: TopAnimation infinite 6s;
+}
+
+@keyframes TopAnimation 
+{
+    0%
+    {
+        content: "krish";
+    }
+
+    1.5%
+    {
+        content: "kurish";
+    }
+    
+    3%
+    {
+        content: "kueneh";
+    }
+
+    4.5%
+    {
+        content: "uaenal";
+    }
+
+    6%
+    {
+        content: "unentl";
+    }
+
+    7.5%
+    {
+        content: "unretl";
+    }
+
+    9%
+    {
+        content: "unreal";
+    }
+
+    50%
+    {
+        content: "unreal";
+    }
+}
+
+.BottomAnimatedText
+{
+    
+}
+.BottomAnimatedText::before
+{
+    content: "Han";
+    Animation: BottomAnimation infinite 6s;
+}
+
+@keyframes BottomAnimation
+{
+
+    0%
+    {
+        content: "Han";
+    }
+
+    1.5%
+    {
+        content: "Hanjs";
+    }
+
+    3%
+    {
+        content: "Hoenjs";
+    }
+
+    4.5%
+    {
+        content: "Hoenjs";
+    }
+
+    6%
+    {
+        content: "Potejns";
+    }
+
+    7.5%
+    {
+        content: "Prjoets";
+    }
+
+    9%
+    {
+        content: "projects";
+    }
+
+    50%
+    {
+        content: "projects";
+    }
+}
+
+
+.ButtonContainer
+{   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.ProjectButton
+{
+    text-decoration: none;
+    background-color: #E5E5E5;
+    color: #D62828;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 1.5rem;
+    
+}
+
+.AboutButton
+{
+    text-decoration: none;
+    background-color: #E5E5E5;
+    color: rgb(26 26 26);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 1.5rem;
+    
+}
+
+.AboutButton:hover, .ProjectButton:hover
+{
+    background-color: #D62828;
+    color: #E5E5E5;
+}
+
+
+
+/*Smaller Screens*/
+@media (max-width: 480px)
+{
+    .Breakline
+    {
+        display: none;
+    }
+
+    .SideBarSwitch
+    {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        fill: #E5E5E5;
+    }
+
+    .SideBarSwitch:hover
+    {
+        fill: #D62828;
+    }
+
+    .NavBarListItem
+    {
+        display: none;
+    }
+
+    .ButtonContainer
+    {
+        display: none;
+    }
+
+    .AnimatedText
+    {
+        font-size: 15vw;
+    }
+
+}
+
+  

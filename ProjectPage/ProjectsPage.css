@@ -1,0 +1,274 @@
+body
+{
+    margin: 0%;
+}
+
+h1
+{
+    color: #E5E5E5;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+h2
+{
+    color: #E5E5E5;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+img
+{
+    max-width: 100%; /* Scale down the image to fit its container */
+    max-height: 100%; /* Ensure it doesn’t exceed the container’s height */
+    object-fit: cover;
+}
+
+.Dark-MainColor
+{
+    background-color: #1A1A1A;
+}
+
+.NavWrapper
+{
+
+}
+
+#MainNavBar
+{
+    position: relative;
+    display: flex;
+
+    color: #E5E5E5;
+
+    text-decoration: none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    justify-content: space-between;
+    
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    align-items: center;
+}
+
+.NavBarLogo
+{
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D62828;
+    
+    height: 3.2rem;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.NavBarLogoTopText
+{
+    font-size: 2.1rem;
+    position: relative;
+    top: -33px;
+}
+.NavBarLogoBottomText
+{
+    font-size: 3rem;
+    position: relative;
+    top: -75px;
+}
+
+.RightBar
+{
+    position: relative;
+    color: #E5E5E5;
+    padding: 3px;
+
+    align-items: center;
+    gap: .625rem;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.RightBarButton
+{
+    padding: 3px;
+    border-radius: 14px;
+    align-items: center;
+    gap: .625rem;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.ThemeSwitch
+{
+    background-color: #E5E5E5;
+}
+
+.SideBarSwitch
+{
+    display:none;
+}
+
+.SideBar
+{
+    font-family: "Source Code Pro", monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 500vw;
+    width: 250px;
+    z-index: 10;
+    background-color: #000000;
+    padding: 1rem;
+
+    display: none;
+    flex-direction: column;
+}
+
+.SideBarCloseButton
+{
+    position: relative;
+    top: -2.5rem;
+    left: 14rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #E5E5E5;
+}
+
+.SideBarCloseButton:hover
+{
+    
+    fill: #D62828;
+}
+
+.SidebarList
+{
+    
+}
+
+.SidebarListItem
+{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight:600;
+    list-style: none;
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+.SidebarListItem:hover
+{
+    text-decoration: none;
+    color:#D62828
+}
+
+.NavBarList
+{
+    font-weight: 700;
+    text-wrap-style: pretty;
+    font-family: "Source Code Pro", monospace;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 2.3rem;
+    left: 3.5rem;
+}
+
+.NavBarListItem
+{
+    text-decoration: none;
+    color: #E5E5E5;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.Breakline
+{
+
+}
+
+.NavBarListItem:hover
+{
+    color:#D62828
+}
+
+
+.ContentBox
+{
+    margin: 1.25rem;
+    margin-top: 6rem;
+}
+
+.GridContainer
+{
+    display: grid;
+    grid-auto-columns: minmax(300, 1fr);
+    grid-auto-flow: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.GridItem
+{
+    max-height: 100%;
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #000000;
+    border-radius: 15px;
+}
+
+
+
+/*Smaller Screens*/
+@media (max-width: 480px)
+{
+    .Breakline
+    {
+        display: none;
+    }
+
+    .SideBarSwitch
+    {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        fill: #E5E5E5;
+    }
+
+    .SideBarSwitch:hover
+    {
+        fill: #D62828;
+    }
+
+    .NavBarListItem
+    {
+        display: none;
+    }
+
+    .ButtonContainer
+    {
+        display: none;
+    }
+
+    .AnimatedText
+    {
+        font-size: 15vw;
+    }
+
+}
